@@ -14,16 +14,32 @@ export default function Navbar() {
                <Link href="/" className="text-white/90 no-underline hover:text-white">Matheus Lucas</Link>
             </h1>
             <div className="flex flex-row justify-center sm:justify-evenly align-middle gap-4 text-white text-4xl lg:text-5xl">
-               <Link className="text-white/90 hover:text-white" href={youtubeUrl}>
+               <Link
+                  className="text-white/90 hover:text-white"
+                  href={youtubeUrl}
+                  aria-label="Link to my Youtube Channel"
+               >
                   <FaYoutube />
                </Link>
-               <Link className="text-white/90 hover:text-white" href={instagramUrl}>
+               <Link
+                  className="text-white/90 hover:text-white"
+                  href={instagramUrl}
+                  aria-label="Link to my Instagram account"
+               >
                   <FaInstagram />
                </Link>
-               <Link className="text-white/90 hover:text-white" href={githubUrl}>
+               <Link
+                  className="text-white/90 hover:text-white"
+                  href={githubUrl}
+                  aria-label="Link to my Github repository"
+               >
                   <FaGithub />
                </Link>
-               <Link className="text-white/90 hover:text-white" href={twitterUrl}>
+               <Link
+                  className="text-white/90 hover:text-white"
+                  href={twitterUrl}
+                  aria-label="Link to my Twitter account"
+               >
                   <FaTwitter />
                </Link>
             </div>
