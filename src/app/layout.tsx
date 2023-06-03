@@ -1,9 +1,10 @@
-import { Metadata } from 'next'
-import './globals.css'
 import Navbar from '@/components/Navbar'
+import './globals.css'
+import type { Metadata } from 'next'
+
 
 export const metadata: Metadata = {
-  title: "Matheus's Blog",
+  title: "Matheus Lucas Blog",
   description: 'Created by Matheus Lucas',
 }
 
@@ -16,7 +17,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="dark:bg-slate-800">
         <Navbar />
-        {children}
+        <main className="px-4 md:px-6 prose prose-xl prose-slate dark:prose-invert mx-auto">
+          {children}
+        </main>
       </body>
     </html>
   )
